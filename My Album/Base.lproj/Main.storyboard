@@ -21,26 +21,43 @@
                                 <rect key="frame" x="0.0" y="53" width="600" height="547"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3G-aR-b4G">
-                                <rect key="frame" x="275" y="20" width="50" height="30"/>
-                                <state key="normal" title="Images">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QH-mv-Yu7">
+                                <rect key="frame" x="514" y="24" width="70" height="30"/>
+                                <state key="normal" title="Add Label">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="imagesButtonPresssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="07P-0v-NDP"/>
+                                    <action selector="addLabelButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzT-9l-ftm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa9-lk-zmX">
+                                <rect key="frame" x="16" y="24" width="74" height="30"/>
+                                <state key="normal" title="Add Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imagesButtonPresssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjT-vc-7dt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p3G-aR-b4G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GDh-sa-oxt"/>
-                            <constraint firstAttribute="centerX" secondItem="p3G-aR-b4G" secondAttribute="centerX" id="ORd-ir-SaL"/>
-                            <constraint firstItem="7EE-mD-6wI" firstAttribute="top" secondItem="p3G-aR-b4G" secondAttribute="bottom" constant="3" id="QP4-bf-k9t"/>
+                            <constraint firstItem="1QH-mv-Yu7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4Ff-Cc-igV"/>
+                            <constraint firstItem="Oa9-lk-zmX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5v3-xT-1IL"/>
+                            <constraint firstItem="7EE-mD-6wI" firstAttribute="top" secondItem="Oa9-lk-zmX" secondAttribute="bottom" constant="-1" id="9aZ-gr-xNS"/>
+                            <constraint firstItem="Oa9-lk-zmX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="N2T-ed-B9D"/>
+                            <constraint firstItem="1QH-mv-Yu7" firstAttribute="centerY" secondItem="Oa9-lk-zmX" secondAttribute="centerY" id="W2W-vH-eHH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7EE-mD-6wI" secondAttribute="bottom" id="Z9r-P0-2j7"/>
                             <constraint firstItem="7EE-mD-6wI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="csw-p9-1Bn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7EE-mD-6wI" secondAttribute="trailing" constant="-16" id="lKo-Mf-4G1"/>
-                            <constraint firstItem="7EE-mD-6wI" firstAttribute="centerX" secondItem="p3G-aR-b4G" secondAttribute="centerX" id="x5m-Sz-PIw"/>
+                            <constraint firstItem="1QH-mv-Yu7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="lYy-Un-Xwh"/>
+                            <constraint firstItem="7EE-mD-6wI" firstAttribute="top" secondItem="1QH-mv-Yu7" secondAttribute="bottom" constant="-1" id="zVr-37-kR8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9aZ-gr-xNS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="7EE-mD-6wI" id="6qE-jt-5sw"/>
